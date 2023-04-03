@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAdd">
+   <title>Follow consistent Angular coding styles</title>
+   <body>
+      <p outputclass="Para">Here are some rules to follow to ensure that your project follows the proper coding standard.</p>
+      <ul>
+         <li>Limit files to 400 Lines of code.</li>
+         <li>Define small functions and limit them to no more than 75 lines.</li>
+         <li>Have consistent names for all symbols. The recommended pattern is feature.type.ts.</li>
+         <li>If the values of the variables are intact, then declare it with ‘const’.</li>
+         <li>Use dashes to separate words in the descriptive name and use dots to separate the descriptive name from the type.</li>
+         <li>Names of properties and methods should always be in lower camel case.</li>
+         <li>Always leave one empty line between imports and modules, such as third party and application imports and third-party modules and custom modules.</li>
+      </ul>
+   </body>
+</topic>

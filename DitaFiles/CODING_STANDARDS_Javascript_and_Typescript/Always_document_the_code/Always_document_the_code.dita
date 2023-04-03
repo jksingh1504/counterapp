@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAkf">
+   <title>Always document the code</title>
+   <body>
+      <p outputclass="Para">Always document the code as much as possible. It will improve readability and help a new developer involved in a project to understand its logic.</p>
+      <p outputclass="Para">It is a good practice to document each variable and method. Define methods using multi-line comments on what task the method performs. All parameters should be explained.</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>/**</p>
+                     <p>   * Returns the managed object content children</p>
+                     <p>   * @param id - managed object's canonical id</p>
+                     <p>   * @param uri - managed object's canonical uri</p>
+                     <p>   * @returns Observable the emits the contents of the tree node</p>
+                     <p>   */</p>
+                     <p>  browseTreeNode(id: string, uri: string): Observable&lt;ServerResponse&gt; {</p>
+                     <p>    return this.appService.browseTreeNode(id, uri);</p>
+                     <p>  } </p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

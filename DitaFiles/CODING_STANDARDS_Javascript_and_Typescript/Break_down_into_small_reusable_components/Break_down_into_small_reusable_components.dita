@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAfj">
+   <title>Break down into small reusable components</title>
+   <body>
+      <p outputclass="Para">This is an extension of the single responsibility principle. Large components are very difficult to debug, manage, and test. If a component becomes large, break it down into more reusable smaller components to reduce duplication of the code, so that we can easily manage, maintain, and debug with less effort.</p>
+      <p outputclass="Para">Angular best practices - parent component</p>
+   </body>
+</topic>

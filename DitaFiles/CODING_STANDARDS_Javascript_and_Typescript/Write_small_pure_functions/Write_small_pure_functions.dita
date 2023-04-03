@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAll">
+   <title>Write small pure functions</title>
+   <body>
+      <p outputclass="Para">When we write functions to execute some business logic, we should keep them small and clean. Small functions are easier to test and maintain. When you start noticing that your function is getting long and cluttered, it’s probably a good idea to abstract some of the logic to a new one.</p>
+      <p outputclass="Para">This avoids functions like this:</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>addOrUpdateData(data: Data, status: boolean) {</p>
+                     <p>  if (status) {</p>
+                     <p>    return this.http.post&lt;Data&gt;(url, data)</p>
+                     <p>      .pipe(this.catchHttpErrors());</p>
+                     <p>  }</p>
+                     <p>  return this.http.put&lt;Data&gt;(`${url}/${data.id}`, data)</p>
+                     <p>    .pipe(this.catchHttpErrors());</p>
+                     <p>  }</p>
+                     <p>}</p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <p outputclass="Para">And hopefully more like this:</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>  removeManagedObject(canonicalId: string): Observable&lt;ServerResponse&gt; {</p>
+                     <p>    const formData = new FormData();</p>
+                     <p>    formData.append('id', canonicalId);</p>
+                     <p>    return this.http.request&lt;ServerResponse&gt;('delete', `${endpoint.contentUrl}`, {</p>
+                     <p>      body: formData,</p>
+                     <p>      headers: this.jsonHeaders</p>
+                     <p>    });</p>
+                     <p>  }</p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

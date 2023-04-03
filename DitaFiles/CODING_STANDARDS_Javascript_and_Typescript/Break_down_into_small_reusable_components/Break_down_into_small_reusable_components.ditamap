@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE map
+ PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+   <title>Break down into small reusable components</title>
+   <topicref href="Break_down_into_small_reusable_components.dita" navtitle="Break down into small reusable components"/>
+</map>

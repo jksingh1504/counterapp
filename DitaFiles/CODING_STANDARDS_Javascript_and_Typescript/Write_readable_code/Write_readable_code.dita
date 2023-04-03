@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAkn">
+   <title>Write readable code</title>
+   <body>
+      <p outputclass="Para">If you want refactoring to be as efficient as possible, it is important to have readable code. Readable code is easier to understand, which makes it easy to debug, maintain, and extend.</p>
+   </body>
+</topic>

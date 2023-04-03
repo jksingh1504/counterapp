@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAhn">
+   <title>Declare safe strings</title>
+   <body>
+      <p outputclass="Para">The variable of type string has only some set of values and we can declare the list of possible values as the type. So, the variable will accept only the possible values. We can avoid bugs while writing the code during compile time itself.</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>
+                        <u>Normal String declaration</u>
+                     </p>
+                     <p>private taskName: string;</p>
+                     <p>// We can assign any string to taskName.</p>
+                     <p>this.taskName = 'Quick task;</p>
+                     <p>
+                        <u>Safe string declaration</u>
+                     </p>
+                     <p>private taskName: 'Quick task' | 'Simple editorial';</p>
+                     <p>this. taskName = ''Quick task ';</p>
+                     <p>this.taskName = 'Simple editorial';</p>
+                     <p>this. taskName = 'Workflow'; // This will give the below error</p>
+                     <p>Type '"'Workflow'"' is not assignable to type '"Quick task" | "Simple editorial"'</p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

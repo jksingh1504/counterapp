@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAan">
+   <title>Maintain proper folder structure</title>
+   <body>
+      <p outputclass="Para">Folder structure is an <xref href="#d3aAan/fig1" format="dita">important </xref>factor to consider before initiating a project. The following folder structure will easily adapt to new changes during development.</p>
+      <p outputclass="Para">-- app</p>
+      <p outputclass="Para">|-- modules</p>
+      <p outputclass="Para">|-- home</p>
+      <p outputclass="Para">|-- [+] components</p>
+      <p outputclass="Para">|-- [+] pages</p>
+      <p outputclass="Para">|-- home-routing.module.ts</p>
+      <p outputclass="Para">|-- home.module.ts</p>
+      <p outputclass="Para">|-- core</p>
+      <p outputclass="Para">|-- [+] authentication</p>
+      <p outputclass="Para">|-- [+] footer</p>
+      <p outputclass="Para">|-- [+] guards</p>
+      <p outputclass="Para">|-- [+] http</p>
+      <p outputclass="Para">|-- [+] interceptors</p>
+      <p outputclass="Para">|-- [+] mocks</p>
+      <p outputclass="Para">|-- [+] services</p>
+      <p outputclass="Para">|-- [+] header</p>
+      <p outputclass="Para">|-- core.module.ts</p>
+      <p outputclass="Para">|-- ensureModuleLoadedOnceGuard.ts</p>
+      <p outputclass="Para">|-- logger.service.ts</p>
+      <p outputclass="Para">|</p>
+      <p outputclass="Para">|-- shared</p>
+      <p outputclass="Para">|-- [+] components</p>
+      <p outputclass="Para">|-- [+] directives</p>
+      <p outputclass="Para">|-- [+] pipes</p>
+      <p outputclass="Para">|-- [+] models</p>
+      <p outputclass="Para">|</p>
+      <p outputclass="Para">|-- [+] configs</p>
+      <p outputclass="Para">|-- assets</p>
+      <p outputclass="Para">|-- scss</p>
+      <p outputclass="Para">|-- [+] partials</p>
+      <p outputclass="Para">|-- _base.scss</p>
+      <p outputclass="Para">|-- styles.scss</p>
+   </body>
+</topic>

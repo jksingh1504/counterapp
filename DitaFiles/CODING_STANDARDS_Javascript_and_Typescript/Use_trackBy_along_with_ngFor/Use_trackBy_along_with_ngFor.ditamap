@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE map
+ PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+   <title>Use trackBy along with ngFor</title>
+   <topicref href="Use_trackBy_along_with_ngFor.dita" navtitle="Use trackBy along with ngFor"/>
+</map>
