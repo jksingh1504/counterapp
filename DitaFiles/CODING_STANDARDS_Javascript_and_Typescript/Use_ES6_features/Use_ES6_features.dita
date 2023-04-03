@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAdv">
+   <title>Use ES6 features</title>
+   <body>
+      <p outputclass="Para">ECMAScript is constantly updated with new features and functionalities. The current version is ES6, which has lots of new features and functionalities that can be utilized in Angular.</p>
+      <p outputclass="Para">Here are a few ES6 Features:</p>
+      <ul>
+         <li>Arrow Functions</li>
+         <li>String interpolation</li>
+         <li>Object Literals</li>
+         <li>Let and Const</li>
+         <li>Destructuring</li>
+         <li>Default</li>
+      </ul>
+   </body>
+</topic>

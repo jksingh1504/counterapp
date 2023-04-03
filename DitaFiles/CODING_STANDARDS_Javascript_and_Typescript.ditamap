@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE map
+ PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+   <title>CODING STANDARDS Javascript and Typescript</title>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Introduction/Introduction.ditamap" navtitle="Introduction"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_Angular_CLI/Use_Angular_CLI.ditamap" navtitle="Use Angular CLI"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Maintain_proper_folder_structure/Maintain_proper_folder_structure.ditamap" navtitle="Maintain proper folder structure"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Follow_consistent_Angular_coding_styles/Follow_consistent_Angular_coding_styles.ditamap" navtitle="Follow consistent Angular coding styles"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_ES6_features/Use_ES6_features.ditamap" navtitle="Use ES6 features"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_trackBy_along_with_ngFor/Use_trackBy_along_with_ngFor.ditamap" navtitle="Use trackBy along with ngFor"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Break_down_into_small_reusable_components/Break_down_into_small_reusable_components.ditamap" navtitle="Break down into small reusable components"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_Lazy_Loading/Use_Lazy_Loading.ditamap" navtitle="Use Lazy Loading"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_Index.ts/Use_Index.ts.ditamap" navtitle="Use Index.ts"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Avoid_logic_in_templates/Avoid_logic_in_templates.ditamap" navtitle="Avoid logic in templates"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/_Cache_API_calls/_Cache_API_calls.ditamap" navtitle=" Cache API calls"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_async_pipe_in_templates/Use_async_pipe_in_templates.ditamap" navtitle="Use async pipe in templates"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Declare_safe_strings/Declare_safe_strings.ditamap" navtitle="Declare safe strings"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Avoid_any_type_when_declaring_constants_and_variables/Avoid_any_type_when_declaring_constants_and_variables.ditamap" navtitle="Avoid any type when declaring constants and variables"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/State_management/State_management.ditamap" navtitle="State management"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_CDK_Virtual_Scroll/Use_CDK_Virtual_Scroll.ditamap" navtitle="Use CDK Virtual Scroll"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_environment_variables/Use_environment_variables.ditamap" navtitle="Use environment variables"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Use_lint_rules_for_Typescript_and_SCSS/Use_lint_rules_for_Typescript_and_SCSS.ditamap" navtitle="Use lint rules for Typescript and SCSS"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Always_document_the_code/Always_document_the_code.ditamap" navtitle="Always document the code"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Write_readable_code/Write_readable_code.ditamap" navtitle="Write readable code"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/File_names/File_names.ditamap" navtitle="File names"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Variable_and_function_names/Variable_and_function_names.ditamap" navtitle="Variable and function names"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Write_small_pure_functions/Write_small_pure_functions.ditamap" navtitle="Write small pure functions"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Remove_unused_code/Remove_unused_code.ditamap" navtitle="Remove unused code"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Avoid_code_comments/Avoid_code_comments.ditamap" navtitle="Avoid code comments"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Best_practices_for_Angular_unit_test_cases/Best_practices_for_Angular_unit_test_cases.ditamap" navtitle="Best practices for Angular unit test cases"/>
+   <topicref href="CODING_STANDARDS_Javascript_and_Typescript/Error_handling/Error_handling.ditamap" navtitle="Error handling"/>
+</map>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAmf">
+   <title>Best practices for Angular unit test cases</title>
+   <body>
+      <ul>
+         <li>Make sure unit tests run in an isolated environment so that they run fast.</li>
+         <li>Make sure we have at least 80% of the code coverage.</li>
+         <li>When it comes to testing services, always use spies from the jasmine framework for the dependencies this makes testing a lot faster.</li>
+         <li>When we subscribe to observables while testing, make sure we provide both success and failure callbacks. This will remove unnecessary errors.</li>
+         <li>When testing components with service dependencies, always use mock services instead of real services.</li>
+         <li>All the TestBedConfiguration should be placed in beforeEach not to repeat the same code for every test.</li>
+         <li>While testing components, always access the DOM with debugElement instead of directly calling nativeElement. This is because debugElement provides an abstraction for the underlying runtime environment. This will reduce unnecessary errors.</li>
+         <li>Prefer By.css instead of queryselector if you are running the app on the server as well. This is because the queryselector works only in the browser. if we are running the app on the server, this will fail. But we have to unwrap the result to get the actual value.</li>
+         <li>Always use a fixture.detectChanges() instead of ComponentFixtureAutoDetect. ComponentFixtureAutoDetect doesn’t know the synchronous update to the components.</li>
+         <li>Call compileComponents() if we are running the tests in the non-CLI environment.</li>
+         <li>Use RXJS marble testing whenever we are testing observables.</li>
+         <li>Use PageObject model for reusable functions across components.</li>
+         <li>Don’t overuse NO_ERRORS_SCHEMA. This tells angular to ignore the attributes and unrecognized tags, prefer to use component stubs.</li>
+         <li>Another advantage of using component stubs instead of NO_ERRORS_SCHEMA is that we can interact with these components if necessary. It’s better to use both techniques together</li>
+         <li>Never do any setup after calling compileComponents(). compileComponents is asynchronous and should be executed in async beforeEach. Maintain the second beforeEach to do the synchronous setup.</li>
+      </ul>
+   </body>
+</topic>

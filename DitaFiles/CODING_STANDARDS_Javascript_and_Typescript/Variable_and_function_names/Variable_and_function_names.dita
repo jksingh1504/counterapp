@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAkz">
+   <title>Variable and function names</title>
+   <body>
+      <p outputclass="Para">Name the variables and functions so the next developer understands them. Be descriptive and use meaningful names — clarity over brevity<i>.</i>
+      </p>
+      <p outputclass="Para">This will help us avoid writing functions like this:</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>function div(x, y)) { const val = x / y; return val;}</p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <p outputclass="Para">And hopefully more like this:</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>function divide(divident, divisor) {</p>
+                     <p>  const quotient = divident / divisor;</p>
+                     <p>  return quotient;</p>
+                     <p>}</p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAht">
+   <title>Avoid any type when declaring constants and variables</title>
+   <body>
+      <p outputclass="Para">Declare variables or constants with proper types other than any. This will reduce unintended problems. Another advantage of having good typing in our application is that it makes refactoring easier. If we had a proper typing, we would get a compile-time error as shown below:</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>export interface HotFolder {</p>
+                     <p>    id: string;</p>
+                     <p>    folderName: string;</p>
+                     <p>    enabled: string;</p>
+                     <p>    processDefinitionName: string;</p>
+                     <p>    params: { [key: string]: string };</p>
+                     <p>}</p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>export class HotFoldersAddComponent implements OnInit</p>
+                     <p>hotFolder: HotFolder;</p>
+                     <p>constructor() {</p>
+                     <p> }</p>
+                     <p>ngOnInit() {</p>
+                     <p>this.hotFolder = {</p>
+                     <p>id: 12345,</p>
+                     <p>folderName: ' /home/rsuite/test ',</p>
+                     <p>enabled: true,</p>
+                     <p>path: ‘test’</p>
+                     <p>}</p>
+                     <p>}</p>
+                     <p>}</p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <p outputclass="Para">// Error</p>
+      <p outputclass="Para">Type ‘{ id: number; foldername: string; path: string; }’ is not assignable to type ‘hotFolder.</p>
+      <p outputclass="Para">Object literal may only specify known properties, and ‘path does not exist in type ‘hotFolder.</p>
+   </body>
+</topic>

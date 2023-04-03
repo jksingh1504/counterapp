@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAnx">
+   <title>Handling Errors with HttpClient</title>
+   <body>
+      <p outputclass="Para">By using Angular's HttpClient along with catchError from RxJS, we can easily write a function to handle errors within each service. HttpClient will also conveniently parse JSON responses and return a JavaScript object in the observable. There are two categories of errors which need to be handled differently:</p>
+      <p outputclass="Para">Client-side: Network problems and front-end code errors. With HttpClient, these errors return ErrorEvent instances. Server-side: AJAX errors, user errors, back-end code errors, database errors, file system errors. With HttpClient, these errors return HTTP Error Responses.</p>
+      <p outputclass="Para">By verifying if an error is an instance of ErrorEvent, we can figure out which type of error we have and handle it accordingly.</p>
+      <p outputclass="Para">This is a good solution for just one service, but a real app contains numerous services that can all potentially throw errors. Unfortunately, this solution requires copying the handleError function across all services, which is a very serious anti-pattern in Angular development. If the way we handle errors needs to change, then we have to update every single handleError function across every service. This is counter-productive and can easily lead to more bugs. We need an efficient way to handle errors globally across the entire application. Fortunately, Angular supports this using HttpInterceptor.</p>
+      <p outputclass="Para">Here is an example service which uses this basic form of error handling:</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>import { HttpClient } from '@angular/common/http';</p>
+                     <p>@Injectable()</p>
+                     <p>export class PublishService {</p>
+                     <p>  constructor( private http: HttpClient ) {</p>
+                     <p>  }</p>
+                     <p>publish(data: any): Observable&lt;ServerResponse&gt; {</p>
+                     <p>    const formData = new FormData();</p>
+                     <p>    Object.keys(data).forEach(key =&gt; formData.append(key, data[key]));</p>
+                     <p>    return this.http.post&lt;ServerResponse&gt;(`${endpoint.publishUrl}`, formData).</p>
+                     <p>    pipe(catchError(this.handleError));</p>
+                     <p>  }</p>
+                     <p>  handleError(error){</p>
+                     <p>      return throwError(error.message || "server Error");   }  </p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+      <p outputclass="Para">While ErrorHandler is a useful way to handle errors across an app, HttpInterceptor provides a much more robust solution for handling server and connection-related errors giving the ability to retry or return a richer error response to the client.</p>
+   </body>
+</topic>

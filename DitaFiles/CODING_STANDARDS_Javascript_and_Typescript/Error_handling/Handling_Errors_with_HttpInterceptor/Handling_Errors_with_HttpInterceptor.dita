@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAon">
+   <title>Handling Errors with HttpInterceptor</title>
+   <body>
+      <p outputclass="Para">HttpInterceptor provides a way to intercept HTTP requests and responses to transform or handle them before passing them along.</p>
+      <table>
+         <tgroup cols="1">
+            <colspec colname="col1" colwidth="90.16%"/>
+            <tbody>
+               <row>
+                  <entry>
+                     <p>
+                        <b>import { Injectable } from '@angular/core';</b>
+                     </p>
+                     <p>
+                        <b>import { </b>
+                     </p>
+                     <p>
+                        <b/>
+                        <b>HttpEvent</b>
+                        <b>, </b>
+                        <b>HttpRequest</b>
+                        <b>, </b>
+                        <b>HttpHandler</b>
+                        <b>, </b>
+                     </p>
+                     <p>
+                        <b/>
+                        <b>HttpInterceptor</b>
+                        <b>, </b>
+                        <b>HttpErrorResponse</b>
+                        <b/>
+                     </p>
+                     <p>
+                        <b>} from '@angular/common/http';</b>
+                     </p>
+                     <p>
+                        <b>import { Observable, </b>
+                        <b>throwError</b>
+                        <b> } from '</b>
+                        <b>rxjs</b>
+                        <b>';</b>
+                     </p>
+                     <p>
+                        <b>import { retry, </b>
+                        <b>catchError</b>
+                        <b> } from '</b>
+                        <b>rxjs</b>
+                        <b>/operators';</b>
+                     </p>
+                     <p>
+                        <b>@Injectable()</b>
+                     </p>
+                     <p>
+                        <b>export class </b>
+                        <b>ServerErrorInterceptor</b>
+                        <b> implements </b>
+                        <b>HttpInterceptor</b>
+                        <b> {</b>
+                     </p>
+                     <p>
+                        <b>  intercept(request: </b>
+                        <b>HttpRequest</b>
+                        <b>&lt;any&gt;, next: </b>
+                        <b>HttpHandler</b>
+                        <b>): Observable&lt;</b>
+                        <b>HttpEvent</b>
+                        <b>&lt;any&gt;&gt; {</b>
+                     </p>
+                     <p>
+                        <b>    return </b>
+                        <b>next.handle</b>
+                        <b>(request).pipe(</b>
+                     </p>
+                     <p>
+                        <b>      retry(1),</b>
+                     </p>
+                     <p>
+                        <b/>
+                        <b>catchError</b>
+                        <b>((error: </b>
+                        <b>HttpErrorResponse</b>
+                        <b>) =&gt; {</b>
+                     </p>
+                     <p>
+                        <b>        if (</b>
+                        <b>error.status</b>
+                        <b> === 401) {</b>
+                     </p>
+                     <p>
+                        <b>          // refresh token</b>
+                     </p>
+                     <p>
+                        <b>        } else {</b>
+                     </p>
+                     <p>
+                        <b>          return </b>
+                        <b>throwError</b>
+                        <b>(error);</b>
+                     </p>
+                     <p>
+                        <b>        }</b>
+                     </p>
+                     <p>
+                        <b>      })</b>
+                     </p>
+                     <p>
+                        <b>    );    </b>
+                     </p>
+                     <p>
+                        <b>  }</b>
+                     </p>
+                     <p>
+                        <b>}</b>
+                     </p>
+                  </entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

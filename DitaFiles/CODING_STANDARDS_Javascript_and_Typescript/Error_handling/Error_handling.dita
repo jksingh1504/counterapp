@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAnl">
+   <title>Error handling</title>
+   <body>
+      <p outputclass="Para">Handling errors properly is essential in building a robust application in Angular. Error handlers provide an opportunity to present friendly information to the user and collect important data for development. In today's age of advanced front-end websites, it's more important than ever to have an effective client-side solution for error handling.</p>
+      <p outputclass="Para">An application that does not handle errors gracefully leaves its users confused and frustrated when the app suddenly breaks without explanation. Handling these errors correctly across an application greatly improves user experience. Collected data from the error handling can inform the development team about important issues that slipped past testing. This is why monitoring tools like Rollbar are so important.</p>
+      <p outputclass="Para">In this section, we will compare several solutions for error handling in Angular apps. First we will describe the traditional approaches using ErrorHandler and HttpClient. Then we will show you a better solution using HttpInterceptor. We'll also show you how to use this interceptor to monitor and track errors centrally in <xref href="https://rollbar.com/error-tracking/angular/" format="html" scope="external">https://rollbar.com/error-tracking/angular/</xref> Rollbar.</p>
+      <p outputclass="Para">One traditional way of handling errors in Angular is to provide an ErrorHandler class. This class can be extended to create your own global error handler. This is also a useful way to handle all errors that occur, but is mostly useful for tracking error logs. For reference, you can check our tutorial on how to use  HYPERLINK "https://rollbar.com/blog/client-side-angular-error-handling/" ErrorHandler in Angular 2+.</p>
+      <p outputclass="Para">By implementing error handling in HttpClient or HttpInterceptor, you can work directly with all HTTP requests in your application, providing you with the ability to transform the request, retry it, and more. ErrorHandler is useful for more generic error handling, however, HttpInterceptor provides a much more robust way to handle errors related to the server and network.</p>
+   </body>
+</topic>

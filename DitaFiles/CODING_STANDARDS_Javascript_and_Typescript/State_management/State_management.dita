@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+ PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="d3aAij">
+   <title>State management</title>
+   <body>
+      <p outputclass="Para">One of the most challenging things in software development is state management. State management in Angular helps manage state transitions by storing the state of any form of data. There are several state management libraries for Angular (including NGRX, NGXS, Akita, etc.), all with different uses and purposes.</p>
+      <p outputclass="Para">We can choose suitable state management for our application before we implement it.</p>
+      <p outputclass="Para">Some benefits of using state management.</p>
+      <ul>
+         <li>It enables sharing data between different components.</li>
+         <li>It provides centralized control for state transition.</li>
+         <li>The code is cleaner and more readable.</li>
+         <li>The code is easier to debug when something goes wrong.</li>
+         <li>Dev tools are available for tracing and debugging state management libraries.</li>
+      </ul>
+   </body>
+</topic>
