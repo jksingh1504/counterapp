@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map
- PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-   <title>Use ES6 features</title>
-   <topicref href="Use_ES6_features.dita" navtitle="Use ES6 features"/>
-</map>

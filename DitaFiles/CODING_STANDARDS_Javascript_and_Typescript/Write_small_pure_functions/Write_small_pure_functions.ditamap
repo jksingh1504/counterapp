@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map
- PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-   <title>Write small pure functions</title>
-   <topicref href="Write_small_pure_functions.dita" navtitle="Write small pure functions"/>
-</map>

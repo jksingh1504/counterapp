@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map
- PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-   <title>Remove unused code</title>
-   <topicref href="Remove_unused_code.dita" navtitle="Remove unused code"/>
-</map>

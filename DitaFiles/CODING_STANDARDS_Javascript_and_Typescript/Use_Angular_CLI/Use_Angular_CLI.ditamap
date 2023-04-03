@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map
- PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-   <title>Use Angular CLI</title>
-   <topicref href="Use_Angular_CLI.dita" navtitle="Use Angular CLI"/>
-</map>

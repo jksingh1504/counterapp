@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map
- PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-   <title>Use async pipe in templates</title>
-   <topicref href="Use_async_pipe_in_templates.dita" navtitle="Use async pipe in templates"/>
-</map>

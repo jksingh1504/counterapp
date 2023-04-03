@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic
- PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="d3aAlx">
-   <title>Remove unused code</title>
-   <body>
-      <p outputclass="Para">It is extremely valuable to know if a piece of code is being used or not. If you let unused code stay, then in the future, it can be hard or almost impossible to be certain if it’s actually used or not. Therefore, you should make it a high priority to remove unused code.</p>
-   </body>
-</topic>

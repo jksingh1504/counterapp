@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map
- PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-   <title>Use lint rules for Typescript and SCSS</title>
-   <topicref href="Use_lint_rules_for_Typescript_and_SCSS.dita" navtitle="Use lint rules for Typescript and SCSS"/>
-</map>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE map
- PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-   <title>Avoid any type when declaring constants and variables</title>
-   <topicref href="Avoid_any_type_when_declaring_constants_and_variables.dita" navtitle="Avoid any type when declaring constants and variables"/>
-</map>
